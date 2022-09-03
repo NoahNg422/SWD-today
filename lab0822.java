@@ -1,13 +1,22 @@
-public class Main {
+public class lab0822 {
     public static void main(String[] args) {
-        String some_text = "Welcome to CPSC 2740!";
-        String name = "Richard";
-        System.out.println(some_text);
-        System.out.println(15 + 27);
-        System.out.println(true);
-        System.out.println("Hello, " + name);
-        for (int c = 0; c < 99999; c++) {
-            System.out.println(c);
+
+        greetclass gn;
+
+        if(args.length > 0) {
+            gn = new greetclass(args[0]);
         }
+        else {
+            gn = new greetclass();
+        }
+
+        System.out.println(gn);
+
+        String word = args.length > 0 ? args[0] : gn;
+
+        gn.set_name("Fly");
+        System.out.printf("Greetings, %s ...\n", word);
+        System.out.println(gn);
+        System.out.println("Enjoy your day!");
     }
 }

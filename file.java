@@ -6,7 +6,7 @@ public class Main {
         System.out.println(15 + 27);
         System.out.println(true);
         System.out.println("Hello, " + name);
-        for (int c = 0; c < 99999; c++) {
+        for (int c = 0; c < 999; c++) {
             System.out.println(c);
         }
     }
